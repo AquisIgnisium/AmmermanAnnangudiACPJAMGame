@@ -27,6 +27,9 @@ def Game():
     choice = input("    So, tell me your choice by telling me the exact name with capitals of the Gang you wish to challenge")
     if choice == "Giggle Gang" or choice == "The Giggle Gang":
         GG.game()
-    elif choice == "Syndicate of Silence" or choice == "The Syndicate of Silence"
+    elif choice == "Syndicate of Silence" or choice == "The Syndicate of Silence":
+        SOS.game()
+    elif choice == "Black Diamond Syndicate" or choice == "The Black Diamond Syndicate":
+        BDS.game()
 
 Game()
