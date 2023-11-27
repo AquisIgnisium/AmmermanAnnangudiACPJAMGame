@@ -1,2 +1,2 @@
 def game():
-    #game here
+    print("x")
