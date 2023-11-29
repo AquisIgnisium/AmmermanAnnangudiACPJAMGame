@@ -69,7 +69,25 @@ def completeBrackets(b):
         if bracket in pairs.keys():
             stack.append(pairs[bracket])
     return ''.join(stack)
-
+def arithmatic(diff,timeReq,operator):
+    currTimer = time.time()
+    num1 = rand.randint(5,diff*5)
+    num2 = rand.randint(5,diff*5)
+    anwser = 0  
+    print("Quick! evaluate the following arithmatic!")
+    if operator == "+":
+        anwser = num1 + num2
+        x = input(">>")
+    if operator == "-":
+        anwser = num1 - num2
+        x = input(">>")
+    if operator == "*":
+        anwser = num1 * num2
+        x = input(">>")
+    if operator == "/":
+        anwser = num1 / num2
+        x = input(">>")
+    
 retype(1)    
 dnaBases(1)
 closebrackets(1)
