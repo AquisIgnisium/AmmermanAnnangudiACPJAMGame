@@ -27,10 +27,10 @@ def Game():
     input("    So, tell me your choice by telling me the exact name with capitals of the Gang you wish to challenge")
     choice = input(">>")
     if choice == "Giggle Gang" or choice == "The Giggle Gang":
-        GG.game()
+        GG.game(username)
     elif choice == "Syndicate of Silence" or choice == "The Syndicate of Silence":
-        SOS.game()
+        SOS.game(username)
     elif choice == "Black Diamond Syndicate" or choice == "The Black Diamond Syndicate":
-        BDS.game()
+        BDS.game(username)
 
 Game()
