@@ -1,2 +1,2 @@
-def game(username):
-    print("x")
+def game():
+    input("Welcome to the Black Diamond Syndicate")
