@@ -1,2 +1,2 @@
 def game():
-    print("x")
+    input("Welcome to the Black Diamond Syndicate")
