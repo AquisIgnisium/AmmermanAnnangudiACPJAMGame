@@ -27,4 +27,5 @@ def game(username):
     input("The Next Day \n\nYou wake up and put on your new clothes, your no longer " + username + " and you are now " + undercover_username)
     input("For your first day with the giggle gang they task you with kidnaping a few children as a test of loyalty, they know most people can't bring themselves to take a child.")
     input("Complete this mini game to carry out your task")
+    challenges.dnaBases(1,15)
 game("brr")
