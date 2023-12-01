@@ -58,13 +58,13 @@ def closebrackets(diff,timeReq):
     xAnwser = userX + completeBrackets(userX)[::-1]
     print("Quick! Retype it with the matching bracket!")
     print(userX)
+    print(xAnwser)
     userInput = input("Anwser:  ")
     if userInput == xAnwser and time.time()-currTimer < timeReq:
         print("Success!")
         return 1
     else:
         print("Fail!")
-        print(xAnwser)
         return -1
 def completeBrackets(b):
     stack = []
@@ -163,5 +163,3 @@ def arithmatic(diff,timeReq,operator):
         else:
             print("Failure!")
             return -1
-
-arithmatic(2,10,"*")

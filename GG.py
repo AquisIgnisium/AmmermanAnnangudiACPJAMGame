@@ -39,4 +39,3 @@ def game(username):
         print("\n\n")
     input("Complete this mini game to carry out your task")
     challenge_1 = challenge.dnaBases(2,20)
-game("brr")
