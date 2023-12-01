@@ -4,7 +4,7 @@ def game(username):
     print("Chief Patel")
     input("     Good choice, I mean you should be able to do this without much struggle, I was hoping you would've picked a hard one")
     print("\n")
-    print("how would you like to respond \nResponce 1:""Yea lets just get this over with already.""\nResponce 2:""Lets sart out small what more can you tell me about the Giggle Gang""\nResponce 3:Well the other two sounded a little too dangerous and I want to have some fun")
+    print("How would you like to respond \nResponce 1:""Yeah lets just get this over with already.""\nResponce 2:""Lets sart out small what more can you tell me about the Giggle Gang""\nResponce 3:Well the other two sounded a little too dangerous and I want to have some fun")
     speaking_choice1 = input(">>")
     if speaking_choice1 == "1":
         print(username)
@@ -13,7 +13,7 @@ def game(username):
         input("     Better going then")
     elif speaking_choice1 == "2":
         print(username)
-        input("     Lets sart out small what more can you tell me about the Giggle Gang.")
+        input("     Lets start out small what more can you tell me about the Giggle Gang.")
         print("Chief Patel")
         input("     The Giggle Gang is a surprisingly serious group of criminals. They kidnap children and take away their happyness or ""giggles"". The group is led by Amy Schumer, the worst comedian in my opinion, but that doesn't matter right now. I need you to go infiltrate them and take Schumer down. Good luck I hope to see you back soon.")
     elif  speaking_choice1 == "3":

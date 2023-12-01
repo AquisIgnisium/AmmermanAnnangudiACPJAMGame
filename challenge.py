@@ -129,3 +129,39 @@ def wordScramble(diff, timeReq):
     else:
         print("Fail!")
         return -1
+def arithmatic(diff,timeReq,operator):
+    currTimer = time.time()
+    num1 = rand.randint(5,diff*5)
+    num2 = rand.randint(5,diff*5)
+    anwser = 0  
+    print("Quick! evaluate the following arithmatic!")
+    print(num1, operator, num2)
+    if operator == "+":
+        anwser = num1 + num2
+        x = int(input(">>"))
+        if x == anwser and time.time()-currTimer < timeReq:
+            print("Success")
+            return 1
+        else:
+            print("Failure!")
+            return -1
+    if operator == "-":
+        anwser = num1 - num2
+        x = int(input(">>"))
+        if x == anwser and time.time()-currTimer < timeReq:
+            print("Success")
+            return 1
+        else:
+            print("Failure!")
+            return -1
+    if operator == "*":
+        anwser = num1 * num2
+        x = int(input(">>"))
+        if x == anwser and time.time()-currTimer < timeReq:
+            print("Success")
+            return 1
+        else:
+            print("Failure!")
+            return -1
+
+arithmatic(2,10,"*")
