@@ -1,7 +1,12 @@
 import os as os
 import time as time
 import random as rand
+from random import shuffle
 import string
+def shuffleWords(w):
+    w = list(w)
+    shuffle(w)
+    return str("".join(w))
 def retype(diff, timeReq):
     currTimer = time.time()
     x = ""
@@ -69,6 +74,61 @@ def completeBrackets(b):
         if bracket in pairs.keys():
             stack.append(pairs[bracket])
     return ''.join(stack)
+def MemoryGame(diff,TimeReq):
+    currTimer = time.time()
+    x = ""
+    f = diff *5
+    for i in range(1,f):
+        x = x + rand.choice(string.ascii_letters)
+    print("Quick! Memorize the string of characters")
+    print(x)
+    time.sleep(TimeReq)
+    os.system('cls')
+    input("Press Enter to Continue")
+    os.system('cls')
+    print("Print out the characters now!")
+    userInput = input(">>")
+    if userInput == x:
+        print("Success!")
+        return 1
+    else:
+        print("Fail!")
+        return -1
+def wordScramble(diff, timeReq):
+    currTimer = time.time()
+    common_words = [
+    "apple", "table", "chair", "house", "happy",
+    "smile", "water", "dance", "write", "learn",
+    "light", "music", "sunny", "cloud", "dream",
+    "night", "flower", "peace", "green", "heart",
+    "laugh", "beach", "money", "brown", "candle",
+    "simple", "friend", "family", "yellow", "orange",
+    "purple", "forest", "travel", "people", "silent",
+    "shadow", "mirror", "window", "silver", "coffee",
+    "summer", "winter", "spring", "autumn", "garden",
+    "diamond", "butterfly", "freedom", "jungle", "ocean",
+    "mountain", "rainbow", "country", "moment", "spirit",
+    "captain", "puzzle", "tunnel", "courage", "fortune",
+    "whisper", "sunset", "sunrise", "twinkle", "majestic",
+    "mystery", "radiant", "fantasy", "curious", "inspire",
+    "elegant", "treasure", "genuine", "brilliant", "cascade",
+    "velvet", "quiver", "cocoa", "fumble", "climax",
+    "rumble", "noodle", "nectar", "glisten", "dazzle",
+    "breeze", "serene", "tranquil", "lagoon", "delight",
+    "serendipity", "lullaby", "enchant", "whimsical", "velvet",
+    "frolic", "sculpt", "harmony", "blossom", "enlighten"]
+    userWord = rand.choice(common_words)
+    scrambledWord = shuffleWords(userWord)
+    print("Quick! Unscramble the word!")
+    print(scrambledWord)
+    print(userWord)
+    userInput = input(">>")
+    if userInput == userWord and time.time()-currTimer < timeReq:
+        print("Success!")
+        return 1
+    else:
+        print("Fail!")
+        return -1
 def arithmatic(diff,timeReq,operator):
     currTimer = time.time()
     num1 = rand.randint(5,diff*5)
