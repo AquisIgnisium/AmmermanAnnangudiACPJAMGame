@@ -105,7 +105,7 @@ def game(username):
     challenge_7 = challenge.dnaBases(2,20)
     challenge_8 = challenge.retype(2,20)
     challenge_9 = challenge.closebrackets(1,15)
-    challenge_10 =challenge.wordScramble(1,30)
+    challenge_10 = challenge.wordScramble(1,30)
     if challenge_6 + challenge_7 + challenge_8 + challenge_9 + challenge_10 < 0:
         print("Vinny ""The Giggler"" Gambino:")
         input("     Come on " + undercover_username +" what was that, do better")
@@ -121,5 +121,5 @@ def game(username):
     elif challenge_6 + challenge_7 + challenge_8 + challenge_9 + challenge_10 > 0:
         print("Vinny ""The Giggler"" Gambino:")
         input("     Good job " + undercover_username +" it might be time for you to meet the leader")
-    input("     Tomorrow at noon meet me behind the clown house and Ill introduce you two")
-    
+    input("     Tomorrow at noon meet me behind the clown house and Ill introduce you two, now lets get going back home")
+    os.system("cls")
