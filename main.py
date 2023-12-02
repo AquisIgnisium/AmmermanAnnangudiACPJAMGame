@@ -31,5 +31,4 @@ def Game():
         SOS.game(username)
     elif choice == "Black Diamond Syndicate" or choice == "The Black Diamond Syndicate":
         BDS.game(username)
-
 Game()

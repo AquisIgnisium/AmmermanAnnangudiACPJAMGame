@@ -84,3 +84,42 @@ def game(username):
     input("     Tommorow we take down a whole preschool, we are gonna kidnap every single child, meet here at 6:00 am tomorrow morning\n\n" + undercover_username + " follow me I'll take to your room")
     input("\n*You enter your room, a bright and colorful clown themed bedroom filled with mirrors, you lay down in the yellow clown car bed surprised you fit and drift off to sleep*")
     os.system('cls')
+    print("Vinny ""The Giggler"" Gambino:")
+    input("     You ready to get going?")
+    print("\nChoose a responce \nResponce 1:""Yea lets hit the road""\nRespoce 2:""Of course""\nResponce 3:""As I'll ever be")
+    input(">>")
+    print("Vinny ""The Giggler"" Gambino:")
+    input("     Good lets hit the road")
+    input("\n \n        Ok were here lets get in and get out make sure to get every last vhild in there")
+    input("Quick pick the lock to get inside")
+    challenge_5 = challenge.arithmatic(3,30,"+")
+    if challenge_5 == 1:
+        print("Vinnie ""The Giggler"" Gambino:")
+        input("     Nice one")
+    elif challenge_5 == -1:
+        print("Vinnie ""The Giggler"" Gambino:")
+        input("     It ain't matter")
+        input("*Vinnie kicks down the door*")
+    input("     Quick grab the kids")
+    challenge_6 = challenge.MemoryGame(1,15)
+    challenge_7 = challenge.dnaBases(2,20)
+    challenge_8 = challenge.retype(2,20)
+    challenge_9 = challenge.closebrackets(1,15)
+    challenge_10 =challenge.wordScramble(1,30)
+    if challenge_6 + challenge_7 + challenge_8 + challenge_9 + challenge_10 < 0:
+        print("Vinny ""The Giggler"" Gambino:")
+        input("     Come on " + undercover_username +" what was that, do better")
+        input(" redeem your self right now")
+        redeem_challenge_2 = challenge.arithmatic(5,30,"*")
+        if redeem_challenge_2 == 1:
+            print("Vinnie ""The Giggler"" Gambino:")
+            input("     Good job maybe its time for you top meet our leader")
+        elif redeem_challenge_2 == -1:
+            print("Vinnie ""The Giggler"" Gambino:")
+            input("     Thats really dissapionting I thought you coulda been one of the greats \nBye")
+            quit()
+    elif challenge_6 + challenge_7 + challenge_8 + challenge_9 + challenge_10 > 0:
+        print("Vinny ""The Giggler"" Gambino:")
+        input("     Good job " + undercover_username +" it might be time for you to meet the leader")
+    input("     Tomorrow at noon meet me behind the clown house and Ill introduce you two")
+    
