@@ -121,7 +121,6 @@ def wordScramble(diff, timeReq):
     scrambledWord = shuffleWords(userWord)
     print("Quick! Unscramble the word!")
     print(scrambledWord)
-    print(userWord)
     userInput = input(">>")
     if userInput == userWord and time.time()-currTimer < timeReq:
         print("Success!")

@@ -52,7 +52,7 @@ def Game():
     input("    I found three notorious underground crime rings in Hebron, Indiana")
     input("    The first one is the powerful Black Diamond Syndicate, famed for their ruthless behavior")
     input("    The second one is the dangerous Syndicate of Silence, known for their strict operations")
-    input("    and the final one is the notorious Giggle Gange, written about for their humourous practices")
+    input("    and the final one is the notorious Giggle Gang, written about for their humourous practices")
     input("    So, tell me your choice by telling me the exact name with capitals of the Gang you wish to challenge")
     choice = input(">>")
     if choice == "Giggle Gang" or choice == "The Giggle Gang":
