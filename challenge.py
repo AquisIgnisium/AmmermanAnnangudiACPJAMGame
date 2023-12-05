@@ -69,7 +69,6 @@ def closebrackets(diff,timeReq):
 def completeBrackets(b):
     stack = []
     pairs = {'(': ')', '[': ']', '{': '}', '<' : ">"}
-
     for bracket in b:
         if bracket in pairs.keys():
             stack.append(pairs[bracket])

@@ -52,5 +52,3 @@ def game(username):
     input("    Marinara flavored dreams little regazzo!")
     input("You drift to sleep with the smell of marinara in your nose")
     os.system('cls')
-    
-game("Charan")
