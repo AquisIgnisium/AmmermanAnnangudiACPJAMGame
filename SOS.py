@@ -12,7 +12,7 @@ def game(username):
     input("    Before I send you off, what would you like your undercover name to be?")
     undercoverName = input(">>")
     print("Tony Rossi (Syndicate of Silence Grunt):")
-    input("    Ciao, newbie!")
+    input("    Ciao, " + undercoverName + "!")
     input("    Welcome to da Family! As you are a newbie, we require you to do some of da tasks to join da Familie")
     input("    Ya gotta rob dis bank. Ya gotta leave nona da witnesses. YA GOTTA GET DA MONEY")
     input("    Veni Vidi Vici BABY. Mamma Mia!")
@@ -52,5 +52,3 @@ def game(username):
     input("    Marinara flavored dreams little regazzo!")
     input("You drift to sleep with the smell of marinara in your nose")
     os.system('cls')
-    
-game("Charan")
