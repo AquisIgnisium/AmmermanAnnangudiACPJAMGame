@@ -209,50 +209,53 @@ def game(username):
         lose_count = 0
         score = 0
         while lose_count < 3 and score < 15:
+            print(str(lose_count))
             challenge_11 = challenge.arithmatic(2,20,"*")
-            if challenge_11 == "1":
+            if challenge_11 == 1:
                 score += 1
-            elif challenge_11 == "-1":
+            elif challenge_11 == -1:
                 lose_count += 1
             if lose_count == 3 or score == 15:
                 break
+            print(str(lose_count))
             input("     " + rand.choice(joey_responses))
             challenge_12 = challenge.wordScramble(1,20)
-            if challenge_12 == "1":
+            if challenge_12 == 1:
                 score += 1
-            elif challenge_12 == "-1":
-                    lose_count += 1
+            elif challenge_12 == -1:
+                    lose_count = lose_count + 1
             if lose_count == 3 or score == 15:
                 break
+            print(str(lose_count))
             input("     " + rand.choice(joey_responses))
             challenge_13 = challenge.dnaBases(3,15)
-            if challenge_13 == "1":
+            if challenge_13 == 1:
                 score += 1
-            elif challenge_13 == "-1":
-                lose_count += 1
+            elif challenge_13 == -1:
+                lose_count = lose_count + 1
             if lose_count == 3 or score == 15:
                 break
             input("     " + rand.choice(joey_responses))
             challenge_14 = challenge.closebrackets(2,20)
-            if challenge_14 == "1":
+            if challenge_14 == 1:
                 score += 1
-            elif challenge_14 == "-1":
-                lose_count += 1
+            elif challenge_14 == -1:
+                lose_count = lose_count + 1
             if lose_count == 3 or score == 15:
                 break
             input("     " + rand.choice(joey_responses))
             challenge_15 = challenge.MemoryGame(1,10)
-            if challenge_15 == "1":
+            if challenge_15 == 1:
                 score += 1
-            elif challenge_15 == "-1":
-                lose_count += 1
+            elif challenge_15 == -1:
+                lose_count = lose_count + 1
             if lose_count == 3 or score == 15:
                 break
             input("     " + rand.choice(joey_responses))
             challenge_16 = challenge.retype(3,15)
-            if challenge_16 == "1":
+            if challenge_16 == 1:
                 score += 1
-            elif challenge_16 == "-1":
+            elif challenge_16 == -1:
                 lose_count += 1
             if lose_count == 3 or score == 15:
                 break
@@ -278,55 +281,59 @@ def game(username):
         lose_count = 0
         score = 0
         while lose_count < 3 and score < 15:
+            print(str(lose_count))
             challenge_11 = challenge.arithmatic(2,20,"*")
-            if challenge_11 == "1":
+            if challenge_11 == 1:
                 score += 1
-            elif challenge_11 == "-1":
+            elif challenge_11 == -1:
                 lose_count += 1
             if lose_count == 3 or score == 15:
                 break
+            print(str(lose_count))
             input("     " + rand.choice(Joker_responses))
             challenge_12 = challenge.wordScramble(2,20)
-            if challenge_12 == "1":
+            if challenge_12 == 1:
                 score += 1
-            elif challenge_12 == "-1":
+            elif challenge_12 == -1:
                     lose_count += 1
             if lose_count == 3 or score == 15:
                 break
+            print(str(lose_count))
             input("     " + rand.choice(Joker_responses))
             challenge_13 = challenge.dnaBases(3,15)
-            if challenge_13 == "1":
+            if challenge_13 == 1:
                 score += 1
-            elif challenge_13 == "-1":
+            elif challenge_13 == -1:
                 lose_count += 1
             if lose_count == 3 or score == 15:
                 break
+            print(str(lose_count))
             input("     " + rand.choice(Joker_responses))
             challenge_14 = challenge.closebrackets(2,20)
-            if challenge_14 == "1":
+            if challenge_14 == 1:
                 score += 1
-            elif challenge_14 == "-1":
+            elif challenge_14 == -1:
                 lose_count += 1
             if lose_count == 3 or score == 15:
                 break
             input("     " + rand.choice(Joker_responses))
-            challenge_15 = challenge.MemoryGame(1,10)
-            if challenge_15 == "1":
+            challenge_15 = challenge.MemoryGame(1,1)
+            if challenge_15 == 1:
                 score += 1
-            elif challenge_15 == "-1":
+            elif challenge_15 == -1:
                 lose_count += 1
             if lose_count == 3 or score == 15:
                 break
             input("     " + rand.choice(Joker_responses))
             challenge_16 = challenge.retype(3,15)
-            if challenge_16 == "1":
+            if challenge_16 == 1:
                 score += 1
-            elif challenge_16 == "-1":
+            elif challenge_16 == -1:
                 lose_count += 1
             if lose_count == 3 or score == 15:
                 break
             input("     " + rand.choice(Joker_responses))
-        if lose_count == 3:
+        if lose_count > 3:
             print("Jimmy Santoro:")
             input("     I cant belive ya thought you would win, its kinda funy actually")
             input("     Ya shoulda taken my offer, bye bye")
@@ -338,6 +345,4 @@ def game(username):
             print("Joey Volpe:")
             input("     Did I make it in time, I brought basckup")
             input("     Wow i cant believe you took him down, and all by yourself too, thats real impresive, now you go home and get some rest, oh and good job")
-            quit()  
-game("b")
-        
+            quit()

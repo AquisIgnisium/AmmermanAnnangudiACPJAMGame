@@ -152,49 +152,49 @@ def game(username):
     responses = ["Here's anhother one" , "Take this" , "Stop while you still can" , "The kids didn't call me Amy Schumer; they called me Amy Jewmer.", "Speaking of things that should already be dead, Charlie Sheen is still alive!" , "I feel like such a lameo buying Plan B" , "I made out with a homeless guy by accident" , "In New York, I'm a six — a seven with all the padding. But in Miami, I was like a negative three", "Get back here", "Your so annoying" , "I'm a hot mess, but I'm a unique hot mess. I own it", "I used to have boyfriend standards, but now I just have snack requirements", "I like my coffee like I like my men; strong, dark, and rich in taste" , "I feel like all my best friends are cookies" , "I don't know if I'm getting any smarter, but I'm getting better at pretending to be smart"]
     while lose_count < 3 and score < 15:
         challenge_11 = challenge.arithmatic(2,20,"-")
-        if challenge_11 == "1":
+        if challenge_11 == 1:
             score += 1
-        elif challenge_11 == "-1":
+        elif challenge_11 == -1:
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
         input("     " + rand.choice(responses))
         challenge_12 = challenge.wordScramble(1,30)
-        if challenge_12 == "1":
+        if challenge_12 == 1:
             score += 1
-        elif challenge_12 == "-1":
+        elif challenge_12 == -1:
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
         input("     " + rand.choice(responses))
         challenge_13 = challenge.dnaBases(2,15)
-        if challenge_13 == "1":
+        if challenge_13 == 1:
             score += 1
-        elif challenge_13 == "-1":
+        elif challenge_13 == -1:
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
         input("     " + rand.choice(responses))
         challenge_14 = challenge.closebrackets(1,20)
-        if challenge_14 == "1":
+        if challenge_14 == 1:
             score += 1
-        elif challenge_14 == "-1":
+        elif challenge_14 == -1:
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
         input("     " + rand.choice(responses))
         challenge_15 = challenge.MemoryGame(1,10)
-        if challenge_15 == "1":
+        if challenge_15 == 1:
             score += 1
-        elif challenge_15 == "-1":
+        elif challenge_15 == -1:
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
         input("     " + rand.choice(responses))
         challenge_16 = challenge.retype(2,15)
-        if challenge_16 == "1":
+        if challenge_16 == 1:
             score += 1
-        elif challenge_16 == "-1":
+        elif challenge_16 == -1:
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
