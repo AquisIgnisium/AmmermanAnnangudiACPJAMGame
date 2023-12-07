@@ -189,8 +189,155 @@ def game(username):
     print("*You wake up to The Jester slapping your face*")
     print("The Jester:")
     input("     heya kid, my name is Joey Volpe")
-    input("     i shouldn't be tellin ya this but")
-    input("     i also work for the cops, ill hook ya up with the gang boss, Jimmy Santoro")
+    input("     I shouldn't be tellin ya this but")
+    input("     I also work for the cops, ill hook ya up with the gang boss, Jimmy Santoro")
     input("     getcha fingas ready and fight!")
+    os.system("cls")
+    print("Jimmy \"The Joker \"Santoro:")
+    input("     Welcome to da family I've heard so a much abouta ya")
+    input("     What ya did at that back robbery was real impressive")
+    input("     I want ya to come work with me, be one of da big dawgs")
+    input("     But first i need ya to do somthing for me")
+    input("     Joey here is a cop and I want ya to take em down")
+    input("     What'dya ya say")
+    print("\n \nYou have two responce choices\nResponce 1:\"Of course boss anything you say\"\nResponce 2:\"Hell no Joey lets get this guy\"")
+    speaking_choice2 = input(">>")
+    if speaking_choice2 == "1":
+        print("Joey Volpe:")
+        input("     What da hell bro, bring it them")
+        joey_responses = ["I can't believe you would do this to me after everything we've been through." , "I thought I could trust you, but I guess I was wrong." , "You're not the person I thought you were." , "I never expected you to betray our friendship like this." , "I feel hurt and betrayed by your actions." , "How could you be so selfish and disregard our friendship?" , "I never thought our friendship would end like this." , "I need some time and space to process what you've done." , "I hope one day you realize the impact of your betrayal." , "I deserve better than a friend who would betray me." , "How could you do this to someone who cared about you?" , "I'm disappointed in you and the choices you've made." , "You've shattered my faith in our friendship." , "I never saw this coming from someone I considered a friend." , "I deserve friends who won't betray me."]
+        lose_count = 0
+        score = 0
+        while lose_count < 3 and score < 15:
+            challenge_11 = challenge.arithmatic(2,20,"*")
+            if challenge_11 == "1":
+                score += 1
+            elif challenge_11 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(joey_responses))
+            challenge_12 = challenge.wordScramble(1,20)
+            if challenge_12 == "1":
+                score += 1
+            elif challenge_12 == "-1":
+                    lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(joey_responses))
+            challenge_13 = challenge.dnaBases(3,15)
+            if challenge_13 == "1":
+                score += 1
+            elif challenge_13 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(joey_responses))
+            challenge_14 = challenge.closebrackets(2,20)
+            if challenge_14 == "1":
+                score += 1
+            elif challenge_14 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(joey_responses))
+            challenge_15 = challenge.MemoryGame(1,10)
+            if challenge_15 == "1":
+                score += 1
+            elif challenge_15 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(joey_responses))
+            challenge_16 = challenge.retype(3,15)
+            if challenge_16 == "1":
+                score += 1
+            elif challenge_16 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(joey_responses))
+        if lose_count == 3:
+            print("Joey Volpe:")
+            input("     I cant belive that you betrayed me, justa like that")
+            input("     Good bye " + undercoverName)
+            quit()
+        elif score == 15:
+            print("Joey Volpe:")
+            input("     Why'd you do it, I thoght you and I were the same")
+            print("Jimmy Santoro")
+            input("     I'm proud of ya kid, good job taking him down")
+            input("     Lets go tell everyone who the new jester is")
+            quit()
+    elif speaking_choice2 == "2":
+        print("Joey Volpe:")
+        input("     Sorry kid your on your own")
+        print("\"The Joker\"")
+        input("     Ha your only friend left you, take this")
+        Joker_responses = ["Where do you think you're goin'? You can't escape!" , "I will make you pay for what you've done!" , "I'm tired of your lies and your manipulations!" , "Don't treat me like this, have some respect for yourself!" , "You're outta your mind! I can't believe the nonsense you're sayin'!" , "Don't push me against the wall, you might regret it!" , "Your arrogance will get you nowhere!" , "Don't you dare speak to me like that!" , "You're just a coward. You can't face the truth!" , "Enough! I can't take these senseless arguments anymore!" , "Ay, you think you can mess with me?! I show you what I'm made of!" , "Come on, come on! Let's settle this like a real man, eh?" , "You better watch your back, my friend. You haven't seen the last of me!" , "I will make you regret the day you crossed paths with me, capisce?" , "You think I'm afraid? You got another thing comin', mio amico!" , "I don't need your pity. I'll fight tooth and nail till the end!" , "You're gonna wish you never laid eyes on me, trust me on that!" , "I may be small, but I'm fierce! I'll knock you out in one hit!"]
+        lose_count = 0
+        score = 0
+        while lose_count < 3 and score < 15:
+            challenge_11 = challenge.arithmatic(2,20,"*")
+            if challenge_11 == "1":
+                score += 1
+            elif challenge_11 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(Joker_responses))
+            challenge_12 = challenge.wordScramble(2,20)
+            if challenge_12 == "1":
+                score += 1
+            elif challenge_12 == "-1":
+                    lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(Joker_responses))
+            challenge_13 = challenge.dnaBases(3,15)
+            if challenge_13 == "1":
+                score += 1
+            elif challenge_13 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(Joker_responses))
+            challenge_14 = challenge.closebrackets(2,20)
+            if challenge_14 == "1":
+                score += 1
+            elif challenge_14 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(Joker_responses))
+            challenge_15 = challenge.MemoryGame(1,10)
+            if challenge_15 == "1":
+                score += 1
+            elif challenge_15 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(Joker_responses))
+            challenge_16 = challenge.retype(3,15)
+            if challenge_16 == "1":
+                score += 1
+            elif challenge_16 == "-1":
+                lose_count += 1
+            if lose_count == 3 or score == 15:
+                break
+            input("     " + rand.choice(Joker_responses))
+        if lose_count == 3:
+            print("Jimmy Santoro:")
+            input("     I cant belive ya thought you would win, its kinda funy actually")
+            input("     Ya shoulda taken my offer, bye bye")
+            quit()
+        if score == 15:
+            print("Jimmy Santoro:")
+            input("     How'd ya manage that one")
+            input("     Maybe you're better than a thought")
+            print("Joey Volpe:")
+            input("     Did I make it in time, I brought basckup")
+            input("     Wow i cant believe you took him down, and all by yourself too, thats real impresive, now you go home and get some rest, oh and good job")
+            quit()  
 game("b")
         
