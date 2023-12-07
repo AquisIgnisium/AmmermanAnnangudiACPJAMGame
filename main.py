@@ -1,6 +1,14 @@
 import BDS
 import GG
 import SOS
+import pygame
+from pygame.locals import *
+from pygame import mixer
+
+mixer.init()
+mixer.music.load('Take Five.wav')
+mixer.music.play()
+
 
 def Game():
     print("Welcome to...")

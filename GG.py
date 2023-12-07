@@ -158,6 +158,7 @@ def game(username):
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
+        print("Amy Shunmer:")
         input("     " + rand.choice(responses))
         challenge_12 = challenge.wordScramble(1,30)
         if challenge_12 == 1:
@@ -166,6 +167,7 @@ def game(username):
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
+        print("Amy Shunmer:")
         input("     " + rand.choice(responses))
         challenge_13 = challenge.dnaBases(2,15)
         if challenge_13 == 1:
@@ -174,6 +176,7 @@ def game(username):
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
+        print("Amy Shunmer:")
         input("     " + rand.choice(responses))
         challenge_14 = challenge.closebrackets(1,20)
         if challenge_14 == 1:
@@ -182,6 +185,7 @@ def game(username):
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
+        print("Amy Shunmer:")
         input("     " + rand.choice(responses))
         challenge_15 = challenge.MemoryGame(1,10)
         if challenge_15 == 1:
@@ -190,6 +194,7 @@ def game(username):
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
+        print("Amy Shunmer:")
         input("     " + rand.choice(responses))
         challenge_16 = challenge.retype(2,15)
         if challenge_16 == 1:
@@ -198,13 +203,14 @@ def game(username):
             lose_count += 1
         if lose_count == 3 or score == 15:
                 break
+        print("Amy Shunmer:")
         input("     " + rand.choice(responses))
     if lose_count == 3:
         print("Amy Schumer:")
         input("     You really thougt that you could beat me, how funny")
         os.system("cls")
         print("Captain Sanjay Patel:")
-        input("     hurry get him to the hospital, NOW")
+        input("     HURRY GET HIM TO THE HOSPITAL, NOW")
         input("     ...\n       ...\n       ....\n     ...")
         input("     " + username + " welcome back at first I was scared you weren't going to make it")
         input("     We got there just in time and thanks to your help we were able to take down the Giggle Gang, I'm pround of you")
@@ -218,6 +224,5 @@ def game(username):
         os.system("cls")
         input("*Six Months Later*")
         print("Captain Patel:")
-        input("     It is truley my honor to bestowe this medal for their services to this towns hero " + username + " their hardwork took down one of this citys worst crime organizations, for that we thank you")
+        input("     It is truly my honor to bestow this medal for their services to this towns hero " + username + " their hardwork took down one of this citys worst crime organizations, for that we thank you")
         quit()
-    game("Nick")

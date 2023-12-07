@@ -13,7 +13,7 @@ def print_slow(i):
 def game(username):
     os.system('cls')
     print("Chief Patel:")
-    input("    Interesting choice" + username)
+    input("    Interesting choice " + username)
     input("    I think that if you put your head down and attack this gang with all of your gang, you can win")
     input("    Before I send you off, what is your undercover name?")
     undercoverName = input(">>")
@@ -87,4 +87,3 @@ def game(username):
     input("    Next time he does that...")
     input("    I'll kill him")
     input()
-game("Charan")
