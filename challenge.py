@@ -58,9 +58,8 @@ def closebrackets(diff,timeReq):
     xAnwser = userX + completeBrackets(userX)[::-1]
     print("Quick! Retype it with the matching bracket!")
     print(userX)
-    print(xAnwser)
-    userInput = input("Anwser:  ")
-    if userInput == xAnwser and time.time()-currTimer < timeReq:
+    userInput = input("Anwser:  " + userX)
+    if userX+userInput == xAnwser and time.time()-currTimer < timeReq:
         print("Success!")
         return 1
     else:
