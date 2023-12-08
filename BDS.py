@@ -38,6 +38,19 @@ def game(username):
     input("    By soon I mean in 5 seconds")
     input("    Go down the stairs and cook perfect pancakes for the boss leader, Christopher Harloff")
     input("*You stumble down the stairs as you see a giant sitting at a one person dining table*")
+    print("Chose something to say\nChoice 1:\"Is this how it normally is here?\"\nChoice 2:\"Anything you say\"\nChoice 3:Stay silent")
+    speaking1 = input(">>")
+    print(undercoverName + ":")
+    if speaking1 == "1":
+        input("     Is this how it normally is here?")
+        print("Julian Denburg:")
+        input("     Shut up, ypu worthless piece of...")
+    elif speaking1 == "2":
+        input("     Anything you say")
+        print("Julian Denburg:")
+        input("     Shut up, ypu worthless piece of...")
+    elif speaking1 == "3":
+        input("     ...\n       ...\n       ...")
     print_slow("Christopher Harloff:")
     input("\n    GET ME BREAKFAST BOY!")
     input("*You scramble around the kitchen making food*")

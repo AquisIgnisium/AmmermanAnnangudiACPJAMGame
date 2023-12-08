@@ -1,12 +1,19 @@
-import BDS
-import GG
-import SOS
+import challenge
+import os as os
+import time as time
+import random as rand
+from random import shuffle
+import string
 import pygame
 from pygame.locals import *
 from pygame import mixer
+import BDS
+import GG
+import SOS
 
+play_list = ['Take Five.wav', "Caravan.wav" , "ATrain.wav"]
 mixer.init()
-mixer.music.load('Take Five.wav')
+mixer.music.load(rand.choice(play_list))
 mixer.music.play()
 
 
