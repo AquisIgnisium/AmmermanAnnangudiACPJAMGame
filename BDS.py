@@ -136,8 +136,23 @@ def game(username):
     print("Andrew Johnson:")
     input("    Looks like I forgot about that one.")
     input("    It's not that bad")
-    #Maybe some input here?
-    input("    Get in Wuss!")
+    print("Choose something to say\nChoice 1:\"What do you mean it's not that bad I'm gonna die\"\nChoice 2:\"You right fam\"\nChoice 3:\"Whatever you say man\"\n")
+    speaking2 = input(">>")
+    if speaking2 == "1":
+        print(undercoverName + ":")
+        input("     What do you mean it's not that bad I'm gonna die")
+        print("Andrew Johnson")
+        input("    Get in Wuss!")
+    elif speaking2 == "2":
+        print(undercoverName + ":")
+        input("     You right fam")
+        print("Andrew Johnson")
+        input("    Ok then")
+    elif speaking2 == "3":
+        print(undercoverName + ":")
+        input("     Whatever you say man")
+        print("Andrew Johnson")
+        input("    Ok then")
     input("*He shoves you in the back of the car*")
     input("*You hear the front door shut and the engine rev on*")
     print("Dodge the Falling knives!")
@@ -322,6 +337,24 @@ def game(username):
     print("\n \nYou have two responce choices\nResponce 1:\"I need some time\"\nResponce 2:\"This is my gang now\"")
     speaking_choice4 = input(">>")
     if speaking_choice4 == 1:
-        print("x")
-
-
+        print(username + ":")
+        input("     I need some time, GET OUT")
+        print_slow("*You stare at the massive titains body on the ground*")
+        print_slow("*You question if it was worth it*")
+        print_slow("*You grab the concealed knife hidden under the massive rolls of fat and*")
+        input("*SNIP*")
+        os.system("cls")
+        print("Chief Patel:")
+        input("Today we morn the loss of a great detective and an amazing person, " + username)
+        input("We say our final goodbyes and we wish him happiness in the next life")
+        quit()
+    elif speaking_choice4 == "2":
+        print(username + ":")
+        input("     This is my gang now, Ill give you one chance to leave")
+        print("Chief Patel:")
+        print_slow("     Your better than this you dont have to...")
+        input("BANG")
+        print_slow("*Chief Patel's lifeless body falls to the ground and a loud thud is heard as the skin of Patel smashes again the massive corpse of Matthew Harloff*")
+        os.system("cls")
+        input( "*Town under the management of new company led by former cop under the name " + undercoverName + " *")
+        quit()
