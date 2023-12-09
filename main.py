@@ -11,7 +11,7 @@ import BDS
 import GG
 import SOS
 
-play_list = ['Take Five.wav', "Caravan.wav" , "ATrain.wav"]
+play_list = ['Take Five.wav', "ATrain.wav", "Caravan.wav"]
 mixer.init()
 mixer.music.load(rand.choice(play_list))
 mixer.music.play()

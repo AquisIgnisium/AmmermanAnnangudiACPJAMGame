@@ -224,4 +224,104 @@ def game(username):
     input("*The stairs of the porch feel harsher than usual*")
     print_slow("Christopher Harloff")
     input("    WHO COMES HERE")
+    print(username + ":")
+    input("    I")
+    input("    I come here")
+    print_slow("    TO KILL YOU")
+    HarloffDiaologue = [
+    "    I'll crush you like a bug!",
+    "    Your moves are more out of sync than a kindergarten recital!",
+    "    You're about to face the fury of a true powerhouse!",
+    "    Is this a fight or a nap? Wake up and face your doom!",
+    "    Prepare for annihilation!",
+    "    Your rhythm is so off, even the metronome is embarrassed!",
+    "    Witness the might of my colossal strength!",
+    "    I bet even the tuba players could outrun you!",
+    "    Your defeat is inevitable, weakling!",
+    "    I've had tougher challenges from my morning warm-up!",
+    "    I'll grind your bones to dust!",
+    "    You're less coordinated than a one-man band with two left feet!",
+    "    You're insignificant in the face of my power!",
+    "    I expected a challenge, not a comedy show! Step up your game!",
+    "    Bow before your impending demise!",
+    "    I've seen better footwork from a three-legged turtle!",
+    "    I'll make you regret challenging me!",
+    "    Your moves are so slow; even the snare drum is outpacing you!",
+    "    Scream for mercy as I unleash my wrath!",
+    "    I've seen scarier kittens!"]
+    print_slow("HARLOFF APPROACHES")
+    harloffAttacks = 30
+    while harloffAttacks > 0:
+        print("Christopher The Cavon Harloff")
+        input(rand.choice(HarloffDiaologue))
+        userChallenge10 = challenge.arithmatic(rand.randint(11,14),10,"*")
+        if userChallenge10 == -1:
+            print("HARLOFF ENDS YOU")
+            print_slow("How does it feel now?")
+            input("You Lose!")
+            quit()
+        else:
+            harloffAttacks = harloffAttacks - 1
+            print("You chop off Harloff's " + rand.choice(impalePart))
+            print("Only " + str(harloffAttacks) + " Left!")
+        print("Christopher The Cavon Harloff")
+        input(rand.choice(HarloffDiaologue))
+        userChallenge11 = challenge.closebrackets(4,10)
+        if userChallenge11 == -1:
+            print("HARLOFF ENDS YOU")
+            print_slow("How does it feel now?")
+            input("You Lose!")
+            quit()
+        else:
+            harloffAttacks = harloffAttacks - 1
+            print("You chop off Harloff's " + rand.choice(impalePart))
+            print("Only " + str(harloffAttacks) + " Left!")
+        print("Christopher The Cavon Harloff")
+        input(rand.choice(HarloffDiaologue))
+        userChallenge12 = challenge.dnaBases(5,14)
+        if userChallenge12 == -1:
+            print("HARLOFF ENDS YOU")
+            print_slow("How does it feel now?")
+            input("You Lose!")
+            quit()
+        else:
+            harloffAttacks = harloffAttacks - 1
+            print("You chop off Harloff's " + rand.choice(impalePart))
+            print("Only " + str(harloffAttacks) + " Left!")
+        userChallenge13 = challenge.retype(3,10)
+        print("Christopher The Cavon Harloff")
+        input(rand.choice(HarloffDiaologue))
+        if userChallenge13 == -1:
+            print("HARLOFF ENDS YOU")
+            print_slow("How does it feel now?")
+            input("You Lose!")
+            quit()
+        else:
+            harloffAttacks = harloffAttacks - 1
+            print("You chop off Harloff's " + rand.choice(impalePart))
+            print("Only " + str(harloffAttacks) + " Left!")
+        print("Christopher The Cavon Harloff")
+        input(rand.choice(HarloffDiaologue))
+        userChallenge14 = challenge.wordScramble(5,10)
+        if userChallenge14 == -1:
+            print("HARLOFF ENDS YOU")
+            print_slow("How does it feel now?")
+            input("You Lose!")
+            quit()
+        else:
+            harloffAttacks = harloffAttacks - 1
+            print("You chop off Harloff's " + rand.choice(impalePart))
+            print("Only " + str(harloffAttacks) + " Left!")
+    input("*The body of the titanous man falls to the ground with a thud*")
+    print_slow("Happy Now?")
+    input("*Chief Patel bursts throught the door followed by a SWAT team*")
+    input("*Patel and the SWAT Team stare at your goried body and the body of Harloff*")
+    input("*They are shocked out of their minds*")
+    print("Chief Patel:")
+    input("    Do you need some time?")
+    print("\n \nYou have two responce choices\nResponce 1:\"I need some time\"\nResponce 2:\"This is my gang now\"")
+    speaking_choice4 = input(">>")
+    if speaking_choice4 == 1:
+        print("x")
+
 

@@ -135,7 +135,11 @@ def arithmatic(diff,timeReq,operator):
     print(num1, operator, num2)
     if operator == "+":
         anwser = num1 + num2
-        x = int(input(">>"))
+        try:
+            x = int(input(">>"))
+        except:
+            print("Failure!")
+            return -1
         if x == anwser and time.time()-currTimer < timeReq:
             print("Success")
             return 1

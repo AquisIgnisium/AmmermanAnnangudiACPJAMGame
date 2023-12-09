@@ -200,7 +200,7 @@ def game(username):
     input("     But first i need ya to do somthing for me")
     input("     Joey here is a cop and I want ya to take em down")
     input("     What'dya ya say")
-    print("\n \nYou have two responce choices\nResponce 1:\"Of course boss anything you say\"\nResponce 2:\"Hell no Joey lets get this guy\"")
+    print("\n \nYou have two responce choices\nResponce 1:\"Of course boss, I'll do anything you say\"\nResponce 2:\"Hell naw, Joey let's get this guy\"")
     speaking_choice2 = input(">>")
     if speaking_choice2 == "1":
         print("Joey Volpe:")
